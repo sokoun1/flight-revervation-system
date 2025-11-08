@@ -52,7 +52,7 @@ exports.loginUser = async (req, res) => {
     });
 
     res.cookie("token", token, { httpOnly: true });
-    res.status(200).json({ message: "Logged in successfully" });
+    res.status(200).json({ message: "Logged in successfully", token: token });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
