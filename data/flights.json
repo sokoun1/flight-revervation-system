@@ -1,0 +1,112 @@
+[
+  {
+    "_id": "690d9475a44f30f617ac3604",
+    "FlightNumber": "K6810",
+    "DepartureDateTime": "2025-08-05T08:30:00.000Z",
+    "ArrivalDateTime": "2025-08-05T10:45:00.000Z",
+    "OriginAirportCode": "PNH",
+    "DestinationAirportCode": "REP",
+    "AvailableSeats": 120,
+    "AirlineID": "688b130283366bbe914d7525",
+    "__v": 0
+  },
+  {
+    "_id": "690d9475a44f30f617ac3605",
+    "FlightNumber": "TG501",
+    "DepartureDateTime": "2025-08-06T07:00:00.000Z",
+    "ArrivalDateTime": "2025-08-06T09:30:00.000Z",
+    "OriginAirportCode": "PNH",
+    "DestinationAirportCode": "BKK",
+    "AvailableSeats": 150,
+    "AirlineID": "688b130283366bbe914d7526",
+    "__v": 0
+  },
+  {
+    "_id": "690d9475a44f30f617ac3606",
+    "FlightNumber": "VN382",
+    "DepartureDateTime": "2025-08-06T13:15:00.000Z",
+    "ArrivalDateTime": "2025-08-06T14:45:00.000Z",
+    "OriginAirportCode": "PNH",
+    "DestinationAirportCode": "SGN",
+    "AvailableSeats": 110,
+    "AirlineID": "688b130283366bbe914d7527",
+    "__v": 0
+  },
+  {
+    "_id": "690d9475a44f30f617ac3607",
+    "FlightNumber": "FD615",
+    "DepartureDateTime": "2025-08-07T09:00:00.000Z",
+    "ArrivalDateTime": "2025-08-07T10:15:00.000Z",
+    "OriginAirportCode": "REP",
+    "DestinationAirportCode": "BKK",
+    "AvailableSeats": 80,
+    "AirlineID": "688b130283366bbe914d7528",
+    "__v": 0
+  },
+  {
+    "_id": "690d9475a44f30f617ac3608",
+    "FlightNumber": "QR971",
+    "DepartureDateTime": "2025-08-08T22:00:00.000Z",
+    "ArrivalDateTime": "2025-08-09T04:45:00.000Z",
+    "OriginAirportCode": "PNH",
+    "DestinationAirportCode": "DOH",
+    "AvailableSeats": 200,
+    "AirlineID": "688b130283366bbe914d7529",
+    "__v": 0
+  },
+  {
+    "_id": "690d9475a44f30f617ac3609",
+    "FlightNumber": "CX708",
+    "DepartureDateTime": "2025-08-09T11:30:00.000Z",
+    "ArrivalDateTime": "2025-08-09T15:45:00.000Z",
+    "OriginAirportCode": "PNH",
+    "DestinationAirportCode": "HKG",
+    "AvailableSeats": 170,
+    "AirlineID": "688b130283366bbe914d7530",
+    "__v": 0
+  },
+  {
+    "_id": "690d9475a44f30f617ac3610",
+    "FlightNumber": "TR805",
+    "DepartureDateTime": "2025-08-10T06:00:00.000Z",
+    "ArrivalDateTime": "2025-08-10T09:30:00.000Z",
+    "OriginAirportCode": "PNH",
+    "DestinationAirportCode": "SIN",
+    "AvailableSeats": 130,
+    "AirlineID": "688b130283366bbe914d7531",
+    "__v": 0
+  },
+  {
+    "_id": "690d9475a44f30f617ac3611",
+    "FlightNumber": "FD613",
+    "DepartureDateTime": "2025-08-10T15:45:00.000Z",
+    "ArrivalDateTime": "2025-08-10T17:00:00.000Z",
+    "OriginAirportCode": "PNH",
+    "DestinationAirportCode": "DMK",
+    "AvailableSeats": 90,
+    "AirlineID": "688b130283366bbe914d7532",
+    "__v": 0
+  },
+  {
+    "_id": "690d9475a44f30f617ac3612",
+    "FlightNumber": "QH921",
+    "DepartureDateTime": "2025-08-11T08:00:00.000Z",
+    "ArrivalDateTime": "2025-08-11T09:45:00.000Z",
+    "OriginAirportCode": "PNH",
+    "DestinationAirportCode": "HAN",
+    "AvailableSeats": 100,
+    "AirlineID": "688b130283366bbe914d7533",
+    "__v": 0
+  },
+  {
+    "_id": "690d9475a44f30f617ac3613",
+    "FlightNumber": "MI601",
+    "DepartureDateTime": "2025-08-12T12:30:00.000Z",
+    "ArrivalDateTime": "2025-08-12T16:15:00.000Z",
+    "OriginAirportCode": "PNH",
+    "DestinationAirportCode": "SIN",
+    "AvailableSeats": 160,
+    "AirlineID": "688b130283366bbe914d7534",
+    "__v": 0
+  }
+]
