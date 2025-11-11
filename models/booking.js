@@ -11,7 +11,11 @@ const BookingSchema = new mongoose.Schema({
     required: true,
     ref: "Passenger",
   },
-  PaymentStatus: { type: String, required: true },
+  PaymentStatus: {
+    type: String,
+    enum: ["Pending", "Paid", "Failed", "Refunded", "Cancelled", "Partial"],
+    default: "Pending",
+  },
 });
 
 module.exports = mongoose.model("Booking", BookingSchema);
