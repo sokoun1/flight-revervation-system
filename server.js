@@ -15,6 +15,11 @@ app.use(cookieParser());
 
 app.use("/api/users", userRoutes);
 app.use("/api/flights", require("./routes/flightRoutes"));
+app.use("/api/passengers", require("./routes/passengerRoutes"));
+app.use("/api/airlines", require("./routes/airlineRoutes"));
+app.use("/api/airports", require("./routes/airportRoutes"));
+app.use("/api/bookings", require("./routes/bookingRoutes"));
+app.use("/api/payments", require("./routes/paymentRoutes"));
 app.use(errorHandler);
 
 mongoose
@@ -30,3 +35,5 @@ mongoose
   .catch((err) => {
     console.error("Connection error", err.message);
   });
+
+module.exports = app;

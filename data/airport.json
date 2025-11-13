@@ -1,0 +1,62 @@
+[
+  {
+    "AirportCode": "PNH",
+    "AirportName": "Phnom Penh International Airport",
+    "Location": "Phnom Penh, Cambodia",
+    "Facilities": ["Free WiFi", "Restaurants", "Lounge Access"]
+  },
+  {
+    "AirportCode": "REP",
+    "AirportName": "Siem Reap International Airport",
+    "Location": "Siem Reap, Cambodia",
+    "Facilities": ["Duty Free Shops", "Restaurants", "Car Rentals"]
+  },
+  {
+    "AirportCode": "KOS",
+    "AirportName": "Sihanoukville International Airport",
+    "Location": "Sihanoukville, Cambodia",
+    "Facilities": ["Free Parking", "Taxi Service", "Coffee Shop"]
+  },
+  {
+    "AirportCode": "BKK",
+    "AirportName": "Suvarnabhumi Airport",
+    "Location": "Bangkok, Thailand",
+    "Facilities": ["WiFi", "Shopping", "Lounges", "Currency Exchange"]
+  },
+  {
+    "AirportCode": "SGN",
+    "AirportName": "Tan Son Nhat International Airport",
+    "Location": "Ho Chi Minh City, Vietnam",
+    "Facilities": ["Restaurants", "Duty Free", "ATMs", "Car Hire"]
+  },
+  {
+    "AirportCode": "HAN",
+    "AirportName": "Noi Bai International Airport",
+    "Location": "Hanoi, Vietnam",
+    "Facilities": ["WiFi", "Lounges", "Shopping", "Information Desk"]
+  },
+  {
+    "AirportCode": "KUL",
+    "AirportName": "Kuala Lumpur International Airport",
+    "Location": "Kuala Lumpur, Malaysia",
+    "Facilities": ["WiFi", "Transit Hotel", "Shopping Mall", "Restaurants"]
+  },
+  {
+    "AirportCode": "SIN",
+    "AirportName": "Singapore Changi Airport",
+    "Location": "Singapore",
+    "Facilities": ["Free Cinema", "Garden", "Lounges", "WiFi"]
+  },
+  {
+    "AirportCode": "HKG",
+    "AirportName": "Hong Kong International Airport",
+    "Location": "Hong Kong",
+    "Facilities": ["Shopping", "Lounge Access", "Transportation Hub", "Dining"]
+  },
+  {
+    "AirportCode": "NRT",
+    "AirportName": "Narita International Airport",
+    "Location": "Tokyo, Japan",
+    "Facilities": ["WiFi", "Currency Exchange", "Hotels", "Shuttle Bus"]
+  }
+]
