@@ -21,6 +21,31 @@ exports.getAllAirlines = async (req, res) => {
   }
 };
 
+// Get all airlines with pagination, filtering, and search
+exports.searchAirlines = async (req, res) => {
+  const { page = 1, limit = 10, search, region } = req.query;
+  const filter = {};
+  if (search) {
+    filter.AirlineName = { $regex: search, $options: "i" };
+  }
+  if (region) filter.OperatingRegion = region;
+  try {
+    const airlines = await Airline.find(filter)
+      .limit(limit * 1)
+      .skip((page - 1) * limit)
+      .exec();
+    const count = await Airline.countDocuments(filter);
+    res.status(200).json({
+      airlines,
+      totalPages: Math.ceil(count / limit),
+      totalAirlines: count,
+      currentPage: page,
+    });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
 // Get a single airline by ID
 exports.getAirlineById = async (req, res) => {
   try {

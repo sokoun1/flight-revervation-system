@@ -5,12 +5,14 @@ const {
   getAirlineById,
   updateAirlineById,
   deleteAirlineById,
+  searchAirlines,
 } = require("../controllers/airLineController");
 const { authenticateToken } = require("../middleware/authMiddleware");
 const router = express.Router();
 
 router.post("/", authenticateToken, createAirline);
 router.get("/", getAllAirlines);
+router.get("/search", searchAirlines);
 router.get("/:id", getAirlineById);
 router.put("/:id", authenticateToken, updateAirlineById);
 router.delete("/:id", authenticateToken, deleteAirlineById);

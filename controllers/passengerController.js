@@ -21,6 +21,32 @@ exports.getAllPassengers = async (req, res) => {
   }
 };
 
+// Get all passengers with pagination, filtering, and search
+exports.searchPassengers = async (req, res) => {
+  const { page = 1, limit = 10, search } = req.query;
+  const filter = {};
+  if (search) {
+    filter.$or = [
+      { FirstName: { $regex: search, $options: "i" } },
+      { LastName: { $regex: search, $options: "i" } },
+      { Email: { $regex: search, $options: "i" } },
+    ];
+  }
+  try {
+    const passengers = await Passenger.find(filter)
+      .limit(limit * 1)
+      .skip((page - 1) * limit)
+      .exec();
+    const count = await Passenger.countDocuments(filter);
+    res.status(200).json({
+      passengers,
+      totalPages: Math.ceil(count / limit),
+      totalPassengers: count,
+      currentPage: page,
+    });
+  } catch (error) {}
+};
+
 // Get a single passenger by ID
 exports.getPassengerById = async (req, res) => {
   try {

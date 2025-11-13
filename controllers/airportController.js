@@ -21,6 +21,36 @@ exports.getAllAirports = async (req, res) => {
   }
 };
 
+// Get all airports with pagination, filtering , and search
+exports.searchAirports = async (req, res) => {
+  const { page = 1, limit = 10, search, location } = req.query;
+  const filter = {};
+  if (search) {
+    filter.$or = [
+      { AirportCode: { $regex: search, $options: "i" } },
+      { AirportName: { $regex: search, $options: "i" } },
+      { Location: { $regex: search, $options: "i" } },
+    ];
+  }
+  if (location) filter.Location = { $regex: location, $options: "i" };
+
+  try {
+    const airports = await Airport.find(filter)
+      .limit(limit * 1)
+      .skip((page - 1) * limit)
+      .exec();
+    const count = await Airport.countDocuments();
+    res.status(200).json({
+      airports,
+      totalPages: Math.ceil(count / limit),
+      totalAirlines: count,
+      currentPage: page,
+    });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
 // Get a single airport by code
 exports.getAirportByCode = async (req, res) => {
   try {
